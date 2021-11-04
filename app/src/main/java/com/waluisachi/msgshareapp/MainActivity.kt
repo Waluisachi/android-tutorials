@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         button2.setOnClickListener {
             val message: String = et.text.toString()
-            Toast.makeText(this, message, Toast.LENGTH_SHORT)
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
             //Navigate to a new activity(Screen)
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
